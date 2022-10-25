@@ -16,6 +16,7 @@ mongoose.connect(DBURL, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useFindAndModify: false,
+  useUnifiedTopology: true,
 });
 app.use(cors());
 app.use(helmet());
